@@ -269,11 +269,11 @@ int main(){
     if (entertainment > takeHome * 0.10)
         score -= 10;
 
-    // big penalty if you spend more than you make
+    //big penalty if you spend more than you make
     if (totalExpenses > takeHome)
         score -= 30;
 
-    // dont let the score go below 0
+    //dont let the score go below 0
     if (score < 0)
         score = 0;
 
@@ -328,7 +328,7 @@ int main(){
 
 
 
-    // save everything to the report file
+    //saves everything to the report file
     saveReport(salary, monthlyGross, takeHome, totalExpenses, leftover,
                needsBudget, wantsBudget, savingsBudget, yearlySavings, score);
 
